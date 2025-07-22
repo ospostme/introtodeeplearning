@@ -1,5 +1,4 @@
 MIT License
-test
 
 Copyright (c) 2025 [MIT Introduction to Deep Learning](http://introtodeeplearning.com/)
 
