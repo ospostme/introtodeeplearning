@@ -163,6 +163,7 @@ rpds-py==0.26.0
 rsa==4.9.1
 safetensors==0.5.3
 scipy==1.11.4
+seaborn==0.13.2
 Send2Trash==1.8.3
 sentry-sdk==2.33.2
 six==1.17.0
