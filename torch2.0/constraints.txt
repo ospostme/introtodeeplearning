@@ -1,0 +1,20 @@
+numpy==1.23.5
+tensorflow==2.10.1
+torch==2.0.1+cu117
+torchvision==0.15.2+cu117
+torchaudio==2.0.2+cu117
+
+tqdm==4.65.0
+
+# HuggingFace Stack
+transformers==4.35.0
+datasets==2.13.1
+peft==0.5.0
+
+# Misc Utilities
+gym==0.26.2              # Avoid Gym 0.27+ API breaks
+openai==1.97.1            # v1+ API (verify exact version in lab code)
+
+matplotlib==3.7.1
+contourpy==1.1.0
+

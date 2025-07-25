@@ -1,0 +1,30 @@
+# Core (CUDA 11.8 compatible)
+numpy==1.24.4
+torch==2.1.2+cu118
+torchvision==0.16.2+cu118
+torchaudio==2.1.2+cu118
+pandas==1.5.3
+
+# TensorFlow (compatible with numpy 1.24.4)
+tensorflow==2.14.0
+
+# HuggingFace stack (modern, LoRA & QLoRA ready)
+transformers==4.53.0
+datasets==4.0.0
+huggingface-hub==0.34.0
+accelerate==1.26.0
+peft==0.11.1
+trl==0.15.2
+bitsandbytes==0.41.1  # Optional for 4-bit
+
+# OpenAI and vision
+openai==1.97.1
+opencv-python==4.11.0.86
+
+# MIT Deep Learning 2025 materials
+mitdeeplearning>=0.7.4
+
+# Optional: visualization and notebook support
+matplotlib
+jupyterlab
+
