@@ -1,0 +1,70 @@
+# Create
+
+micromamba create -n ML python=3.10 -y \
+  -c conda-forge \
+  "pytorch=2.9.1=*cuda129*" \
+  torchvision \
+  torchaudio \
+  numpy \
+  pandas \
+  pyarrow \
+  scipy \
+  scikit-learn \
+  pillow \
+  matplotlib \
+  matplotlib-inline \
+  ipykernel \
+  jupyterlab \
+  notebook
+
+micromamba activate ML
+
+pip install transformers==4.56.2   tokenizers  trl==0.22.2  huggingface-hub==0.36.0  datasets==4.3.0 tqdm   accelerate   peft==0.18.1 bitsandbytes   unsloth   unsloth_zoo tf-keras --no-deps torch==2.9.1
+
+
+
+
+cd mitdeeplearning-0.7.5/
+pip install .
+
+# Save env
+# export env with micromamba, and remove pip list
+
+micromamba env export -n ML --no-builds > env-full.yml
+
+# save clean pip list /remove mitlearning
+
+
+  - pip:
+    - PySocks==1.7.1
+    - PyYAML==6.0.3
+    - accelerate==1.13.0
+    - bitsandbytes==0.49.2
+    - datasets==4.3.0
+    - fasteners==0.20
+    - huggingface-hub==0.36.0
+    - patch-ng==1.18.1
+    - peft==0.18.1
+    - pgvector==0.4.1
+    - tf_keras==2.21.0
+    - tokenizers==0.22.2
+    - tqdm==4.67.3
+    - transformers==4.56.2
+    - trl==0.22.2
+    - unsloth==2026.4.4
+    - unsloth_zoo==2026.4.6
+    - urllib3==2.6.3
+
+
+PySocks==1.7.1, PyYAML==6.0.3, accelerate==1.13.0, bitsandbytes==0.49.2, datasets==4.3.0, fasteners==0.20, huggingface-hub==0.36.0, patch-ng==1.18.1, peft==0.18.1, pgvector==0.4.1, tf_keras==2.21.0, tokenizers==0.22.2, tqdm==4.67.3, transformers==4.56.2, trl==0.22.2, unsloth==2026.4.4, unsloth_zoo==2026.4.6, urllib3==2.6.3
+
+
+
+# recreate
+
+micromamba env create -f env-mamaba.yml -n ML
+
+pip install PySocks==1.7.1, PyYAML==6.0.3, accelerate==1.13.0, bitsandbytes==0.49.2, datasets==4.3.0, fasteners==0.20, huggingface-hub==0.36.0, patch-ng==1.18.1, peft==0.18.1, pgvector==0.4.1, tf_keras==2.21.0, tokenizers==0.22.2, tqdm==4.67.3, transformers==4.56.2, trl==0.22.2, unsloth==2026.4.4, unsloth_zoo==2026.4.6, urllib3==2.6.3 cut_cross_entropy-25.1.1 diffusers-0.37.1 hf_transfer-0.1.9 msgspec-0.21.1 sentencepiece-0.2.1 torchao-0.17.0 typer-0.24.1 tyro-1.0.13 xformers-0.0.35 --dry-run --no-deps torch==2.9.1
+
+
+
