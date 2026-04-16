@@ -15,7 +15,8 @@ micromamba create -n ML python=3.10 -y \
   matplotlib-inline \
   ipykernel \
   jupyterlab \
-  notebook
+  notebook \
+  cuda-nvcc cuda-cudart-dev cuda-driver-dev cuda-nvrtc-dev cuda-version
 
 micromamba activate ML
 

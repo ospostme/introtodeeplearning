@@ -136,3 +136,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ML artifacts
+unsloth_compiled_cache/
+data/
+my_saved_model/
+my_saved_model
+output/
+llama3-8b-4bit-unsloth/
